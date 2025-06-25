@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmaan Portfolio</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+ <!-- Top Navigation Bar -->
+<header class="navbar">
+  <div class="nav__logo">Farmaan Naser</div>
+
+  <!-- Hamburger button for mobile -->
+  <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+  <!-- Navigation Menu -->
+  <nav class="nav__menu" id="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education-experience">Education & Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<br>
+<br>
+  <main>
+<!-- Home Section -->
+<div id="home" class="home__section" data-aos="fade-down">
+  <div class="home__content">
+    <h2>Hello, I'm Farmaan Naser!</h2>
+    <h3 class="section__subtitle">Computer Science and Business Systems Student</h3>
+    <p class="section__subtitle">
+      An undergraduate engineering student at <strong>Sri Sai Ram Engineering College, Chennai</strong>
+    </p>
+
+    <a href="#contact" class="button">Contact Me</a>
+  </div>
+
+  <div class="home__image">
+    <img src="assets/images.png" alt="Farmaan Naser">
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="about__section" data-aos="fade-up">
+  <h2 data-aos="fade-up">About Me</h2>
+  <p class="about__text" data-aos="fade-up">
+    As a B.Tech Computer Science and Business Systems undergraduate, I'm passionate about Full Stack Development and AI/ML. I'm a self-motivated learner and an avid reader, always seeking challenging and dynamic environments to enhance my skills and contribute meaningfully to a professional organization. I thrive on learning new things that spark my interest and drive my personal and professional growth.
+  </p>
+
+  <a href="assets/Farmaan_CV.pdf" download class="button">Download CV</a>
+</section>
+
+    <!-- Skills Section -->
+<section id="skills" class="skills__section" data-aos="fade-up">
+  <h2 data-aos="fade-up">Skills</h2>
+  
+
+  <div class="skills__container" data-aos="fade-up">
+    <div class="skill">C</div>
+    <div class="skill">Python</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">TensorFlow</div>
+    <div class="skill">OpenCV</div>
+    <div class="skill">Machine Learning</div>
+    <div class="skill">n8n</div>
+    <div class="skill">Firebase</div>
+    <div class="skill">Power BI</div>
+  </div>
+</section>
+
+
+<!-- Education and Experience Section -->
+<section id="education-experience" class="timeline__section" data-aos="fade-up">
+  <h2 data-aos="fade-up">Education & Experience</h2>
+  <span class="section__subtitle" data-aos="fade-up">My Journey</span>
+
+  <div class="timeline" data-aos="fade-up">
+    <!-- Education -->
+    <div class="timeline__item left" data-aos="fade-up">
+      <h3>🎓 SSLC</h3>
+      <p>Sree Venkateshwarar Matric Hr Sec School, Chennai</p>
+      <span class="timeline__date">85%</span>
+    </div>
+
+    <div class="timeline__item right" data-aos="fade-up">
+      <h3>🎓 HSC</h3>
+      <p>Sree Venkateshwarar Matric Hr Sec School, Chennai
+      </p>
+      <span class="timeline__date">88%</span>
+    </div>
+
+    <div class="timeline__item left" data-aos="fade-up">
+      <h3>🎓 B.Tech Computer Science and Business Systems</h3>
+      <p>Sri Sai Ram Engineering College, Chennai</p>
+      <span class="timeline__date">CGPA: 8.18</span>
+    </div>
+
+    <!-- Experience -->
+    <div class="timeline__item right" data-aos="fade-up">
+      <h3> Prodigy InfoTech | Web Developer Intern</h3>
+      <p>June 2024 - July 2024</p>
+      <span class="timeline__date">HTML, CSS, JS</span>
+    </div>
+
+    <div class="timeline__item left" data-aos="fade-up">
+      <h3> PWC | Power BI Intern</h3>
+      <p>Aug 2024 - Sep 2024</p>
+      <span class="timeline__date">Business Analytics</span>
+    </div>
+
+    <div class="timeline__item right" data-aos="fade-up">
+      <h3> EDUNET | AIML Intern</h3>
+      <p>March 2025 - April 2025</p>
+      <span class="timeline__date">EDA, Model Training</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects__section" data-aos="fade-up">
+  <h2>Projects</h2>
+  <br>
+  <div class="projects__container">
+    <div class="project__card alt">
+        <div class="project__content">
+      <h3><i class="fa-solid fa-chart-line"></i> Stock Price Prediction</h3>
+      <p>ML model predicting stock prices based on historical market data.</p>
+      </div>
+      <a href="https://github.com/Farmaan-N/Stock_Price_Prediction" target="_blank" class="github__btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <div class="project__card alt">
+        <div class="project__content">
+      <h3><i class="fa-solid fa-wind"></i> Wind Power Forecasting</h3>
+      <p>Time-series forecasting model for wind power generation data.</p>
+      </div>
+      <a href="https://github.com/Farmaan-N/Wind_Power_Generation_Forecasting" target="_blank" class="github__btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <div class="project__card alt">
+        <div class="project__content">
+      <h3><i class="fa-solid fa-house"></i> House Price Prediction</h3>
+      <p>Regression-based model estimating house prices from various parameters.</p>
+      </div>
+      <br>
+      <a href="https://github.com/Farmaan-N/House_Price_Prediction" target="_blank" class="github__btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <div class="project__card alt">
+        <div class="project__content">
+      <h3><i class="fa-solid fa-cloud-sun"></i> Weather Web App</h3>
+      <p>A responsive web app fetching live weather data via Weatherbit API.</p>
+      </div>
+      <a href="https://github.com/Farmaan-N/Weather_WebApplication" target="_blank" class="github__btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <div class="project__card alt">
+        <div class="project__content">
+      <h3><i class="fa-solid fa-cart-shopping"></i> Ecommerce Page</h3>
+      <p>Frontend ecommerce page design with product display and cart features.</p>
+      </div>
+      <br>
+      <a href="https://github.com/Farmaan-N/InstiOLX-WebPage" target="_blank" class="github__btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2 data-aos="fade-up" style="color:#ff6f61;">Contact Me</h2>
+      <br>
+
+
+      <div class="contact__container" data-aos="fade-up">
+        <div>
+          <div class="contact__information" data-aos="fade-up">
+            <i class="uil uil-calling contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Call</h3>
+              <span>+91 8056060351</span>
+            </div>
+          </div>
+
+          <div class="contact__information" data-aos="fade-up">
+            <i class="uil uil-envelope-minus contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span>mohamedfarmaannaser@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information" data-aos="fade-up">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span>Chennai, India</span>
+            </div>
+          </div>
+    
+
+        <div class="contact__information" data-aos="fade-up">
+          <a href="https://www.linkedin.com/in/mohamed-farmaan-naser-n/" target="_blank"><i class="uil uil-linkedin contact__icon" ></i></a>
+          <div>
+            <h3 class="contact__title">Linkedin</h3>
+            <span>Mohamed Farmaan Naser N</span>
+                </div>
+         </div>
+        <div class="contact__information"data-aos="fade-up">
+          <a href="https://github.com/Farmaan-N" target="_blank"><i class="uil uil-github contact__icon"></i></a>
+          <div>
+            <h3 class="contact__title">Github</h3>
+            <span>Farmaan-N</span>
+          </div>
+        </div>
+    
+</div>
+        <form class="contact__form">
+          <div class="contact__inputs" data-aos="fade-up">
+            <div class="contact__content">
+              <label class="content__label">Name</label>
+              <input type="text" class="contact__input" placeholder="Farmaan" />
+            </div>
+            <div class="contact__content" data-aos="fade-up">
+              <label class="content__label">Email</label>
+              <input type="email" class="contact__input" placeholder="example@gmail.com" />
+            </div>
+          </div>
+          <div class="contact__content" data-aos="fade-up">
+            <label class="content__label">Message</label>
+            <textarea rows="5" class="contact__input" placeholder="Your Message..."></textarea>
+          </div>
+          <a href="mailto:mohamedfarmaannaser@gmail.com" class="button" data-aos="fade-up">
+            Send Message <i class="uil uil-message"></i>
+          </a>
+          <a href="http://localhost:5678/form/f0935f51-a8fd-40f4-a433-ffcfbd6b4975" class="button" data-aos="fade-up">
+            Give Feedback <i class="uil uil-feedback"></i>
+          </a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    
+    <div class="footer__socials">
+      <a href="https://www.instagram.com/far_ma_an._/" target="_blank"><i class="uil uil-instagram footer__icons"></i></a>
+      <a href="https://x.com/FarmaanNaser" target="_blank"><i class="fab fa-x-twitter footer__icons"></i></a>
+    </div>
+    <p><h6>&copy; Mohamed Farmaan Naser N. All rights reserved.</h6></p>
+  </footer>
+
+  <a href="#" class="scrollup"><i class="uil uil-arrow-up"></i></a>
+
+<div class="side-nav">
+  <a href="#home" class="dot active" data-label="Home"></a>
+  <a href="#about" class="dot" data-label="About"></a>
+  <a href="#skills" class="dot" data-label="Skills"></a>
+  <a href="#education-experience" class="dot" data-label="Education & Experience"></a>
+  <a href="#projects" class="dot" data-label="Projects"></a>
+  <a href="#contact" class="dot" data-label="Contact"></a>
+</div>
+
+  <!-- Chatbot Button 
+<a href="#!" class="chatbot-btn" id="chatbotButton" data-label="Chatbot">
+  <i class="fa-solid fa-robot"></i>
+</a>
+
+
+<div class="chatbot-panel" id="chatbotPanel">
+  <a data-label="Chatbot">  </a>
+  <div class="chatbot-header">
+    <h4>Chatbot</h4>
+    <button id="closeChatbot" class="close-btn">&times;</button>
+  </div>
+  <div class="chatbot-body" id="chatArea">
+    <div class="bot-message">Hi 👋 How can I help you today?</div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+  </div>
+</div>
+-->
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<div class="n8n">
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/4a682316-2566-47c2-96bd-0215ff26b629/chat'
+	});
+</script>
+</div>
+  <script src="script.js"></script>
+  <!-- AOS Animation Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  
+  });
+</script>
+
+</body>
+</html>
+
+
+	
+</body>
+</html>
