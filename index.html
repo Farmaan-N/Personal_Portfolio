@@ -78,6 +78,8 @@
     <div class="skill">n8n</div>
     <div class="skill">Firebase</div>
     <div class="skill">Power BI</div>
+    <div class="skill">Linux</div>
+    <div class="skill">AWS</div>
   </div>
 </section>
 
@@ -255,7 +257,8 @@
           <a href="mailto:mohamedfarmaannaser@gmail.com" class="button" data-aos="fade-up">
             Send Message <i class="uil uil-message"></i>
           </a>
-          <a href="https://n8n-k3vj.onrender.com/form/f0935f51-a8fd-40f4-a433-ffcfbd6b4975" class="button" data-aos="fade-up">
+          <a href="https://n8n-k3vj.onrender.com/form/f0935f51-a8fd-40f4-a433-ffcfbd6b4975" class="button" data-aos="fade-up">   <!-- Deployed in Render -->
+          <!-- <a href="http://localhost:5678/form/f0935f51-a8fd-40f4-a433-ffcfbd6b4975" class="button" data-aos="fade-up">  -->
             Give Feedback <i class="uil uil-feedback"></i>
           </a>
         </form>
@@ -283,15 +286,96 @@
   <a href="#contact" class="dot" data-label="Contact"></a>
 </div>
 
+<!-- n8n Chat Widget CSS -->
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+<!-- Custom Theme Overrides -->
+<style>
+  :root {
+  /* Color palette */
+  --chat--color-primary: #ff6f61;
+  --chat--color-primary-shade-50: #f06254;
+  --chat--color-primary-shade-100: #e45748;
+  --chat--color-secondary: #ff6e6188; 
+  --chat--color-white: #ffffff;
+  --chat--color-dark: #101330;
+  --chat--color-typing: #ff6f61;
 
-	createChat({
-		webhookUrl: 'https://n8n-k3vj.onrender.com/webhook/4a682316-2566-47c2-96bd-0215ff26b629/chat'
-	});
+  /* Chat window size and background */
+  --chat--window--width: 340px;
+  --chat--window--height: 500px;
+  --chat--window--background: rgba(255, 255, 255, 0.95);
+  --chat--border-radius: 18px;
+  --chat--spacing: 0.9rem;
+  --chat--transition-duration: 0.18s;
+
+  /* Header styles */
+  --chat--header-height: auto;
+  --chat--header--background: var(--chat--color-primary);
+  --chat--header--color: var(--chat--color-white);
+  --chat--heading--font-size: 1.35em;
+
+  /* Floating button styles */
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: var(--chat--color-white);
+  --chat--toggle--size: 58px;
+
+  /* Message styles */
+  --chat--message--font-size: 0.96rem;
+  --chat--message-line-height: 1.7;
+  --chat--message--padding: 0.75rem;
+  --chat--message--border-radius: 1rem;
+  --chat--message--user--background: var(--chat--color-secondary);
+  --chat--message--user--color: #1b1b1b;
+  --chat--message--bot--background: var(--chat--color-white);
+  --chat--message--bot--color: var(--chat--color-dark);
+
+  /* Input */
+  --chat--textarea--height: 48px;
+
+  /* Preformatted message block */
+  --chat--message--pre--background: #f7f8fa;
+}
+
+</style>
+
+<!-- Chat Widget Script -->
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://n8n-k3vj.onrender.com/webhook/4a682316-2566-47c2-96bd-0215ff26b629/chat',
+    webhookConfig: {
+      method: 'POST',
+      headers: {}
+    },
+    target: '#n8n-chat',
+    mode: 'window',
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    loadPreviousSession: true,
+    showWelcomeScreen: false,
+    defaultLanguage: 'en',
+    initialMessages: [
+      'Hi there! 👋',
+      'I am Farmaan.'
+    ],
+    i18n: {
+      en: {
+        title: 'Hi there! 👋',
+        subtitle: "Start a chat. Get instant answers to your questions!",
+        footer: '',
+        getStarted: 'New Conversation',
+        inputPlaceholder: 'Type your question...',
+      }
+    },
+   
+
+  });
 </script>
+
 
   <script src="script.js"></script>
   <!-- AOS Animation Library JS -->
@@ -307,5 +391,3 @@
 
 
 	
-</body>
-</html>
